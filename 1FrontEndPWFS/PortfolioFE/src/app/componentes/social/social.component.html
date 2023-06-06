@@ -1,0 +1,41 @@
+<nav class="row">
+  <div class="col-6 col-lg-8 social-icons text-start">
+    <a
+      href="https://www.facebook.com/jorge.aita.5"
+      target="_blank"
+      class="social-icons"
+      ><i class="fa-brands fa-facebook"></i>
+    </a>
+    <a
+      href="https://api.whatsapp.com/send?phone=+54 9 11 6175-9708"
+      target="_blank"
+      class="social-icons">
+      <i class="fa-brands fa-whatsapp" style="color: #f59d05">
+      </i>
+    </a>
+    <a
+      href="https://www.instagram.com/aitajorge/"
+      target="_blank"
+      class="social-icons">
+      <i class="fa-brands fa-square-instagram" style="color: #bf4d45">
+      </i>
+    </a>
+    <a href="https://twitter.com/jorgeaita" target="_blank" class="social-icons">
+      <i class="fa-brands fa-square-twitter">        
+      </i>
+    </a>
+    <a
+      href="https://www.linkedin.com/in/psicoanalisis-aitajorge/"
+      target="_blank"
+      class="social-icons">
+      <i class="fa-brands fa-linkedin">
+      </i>
+    </a>
+  </div>
+
+  <div class="col-6 col-lg-4 login text-end" style="margin-top: auto; margin-bottom: auto;" style="text-align: right; padding-right: 40px">
+    <button type="button" class="btn btn-outline-primary" (click)="login()" *ngIf="!isLogged">Login</button>
+    <button type="button" class="btn btn-outline-primary" (click)="onLogOut()" *ngif="onLogOut">Cerrar sesión</button>
+  </div>
+</nav>
+

@@ -1,0 +1,12 @@
+
+.app-social{
+  float: right;
+  margin-top: 25px;
+}
+.header-cont {
+  background-color: #dfeaf7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}

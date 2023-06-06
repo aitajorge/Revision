@@ -1,0 +1,21 @@
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  padding: 4px;
+  font-size: 21px;
+  margin-right: 3px;
+  text-decoration: none;
+}
+
+.app-social{
+  float: right;
+  margin-top: 25px;
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

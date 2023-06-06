@@ -1,0 +1,76 @@
+<div class="card mat-card">
+  <div>
+    <div class="empty-space"></div>
+ <div class="card-title">
+ 
+    <!--     Experiencia portfolio-->
+    <div class="row">
+      
+        <h2 class="educa expereduc">Experiencia</h2>
+        <div class="btn-edit" style="text-align: right; padding-right: 30px">
+          <a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
+          <a href="#" class="btn-right btn-danger"><i class="fa fa-trash"></i></a>
+        
+      </div>
+    </div>
+    <div class="col-lg-11">
+    <ul >
+      <li *ngFor="let experiencia of experiencList">
+        <div class="media">
+
+          <div class="data-info col-md-8" style="margin-left: 80px">
+              <img
+              [src]="experiencia.img"
+              alt="logo"
+              class="logo-image img-responsive"
+              style="float: left; margin-right: 5px; height: 2%; width: 2%;"
+            />
+            <h3 style="font-size: 14px">{{ experiencia.school }}</h3>
+            <p style="font-size: 14px">
+              {{ experiencia.title }}- <span>{{ experiencia.career }}</span>
+            </p>
+
+            <!--      <h4>fecha</h4>
+              <h4>lugar 1</h4>
+      -->
+          </div>
+          <div class="data-control col-md-12"></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>
+      <!--     Educación portfolio-->
+  <div>
+    <div class="empty-space"></div>
+    <div class="empty-space"></div>
+    <div>
+      <h2 class="educa expereduc">Educación</h2>
+      <div class="btn-edit" style="text-align: right; padding-right: 30px">
+        <a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
+        <a href="#" class="btn-right btn-danger"><i class="fa fa-trash"></i></a>
+      </div>
+    </div>
+    <div>
+      <ul>
+        <li *ngFor="let educacion of educacionList">
+          <div class="media">
+            
+              <img
+                class="logo-image img-responsive"
+                [src]="educacion.img"
+                style="float: left; margin-right: 5px"
+              />
+            
+            <div class="data-info col-md-8" style="margin-left: 80px">
+              <h3 style="font-size: 14px">{{ educacion.school }}</h3>
+              <p style="font-size: 14px">{{ educacion.career }}</p>
+              <!--              <p><time>{{educacion.start}}</time> - <time> {{educacion.end}} </time></p>         -->
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
